@@ -6,6 +6,120 @@ img {
   margin-top:50px;
 }
 
-.picture {
 
+/*======= Pricing =======*/
+.pricing-item{
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+}
+.pricing-item-inner{
+  border: 2px solid rgba(151, 160, 175, 0.2);
+  vertical-align: middle;
+  border-radius: 7px;
+  -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.pricing-item-inner:hover{
+  border-color: #97a0af;
+}
+.main .pricing-item-inner{
+  border-color: #97a0af;
+}
+.pricing-wrap{
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.pricing-icon{
+    padding-top: 10px;
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 32px;
+  z-index: 1;
+}
+.pricing-title{
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.pr-list{
+  margin: 0 -20px 30px;
+  padding: 0;
+  color: #97a0af;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pr-list li{
+  padding: 12px 20px;
+  list-style: none;
+}
+.pricing-num{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+.pricing-num sup{
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  top: -20px;
+  left: -3px;
+  margin-left: -7px;
+}
+.pr-per{
+  color: #97a0af;
+  font-size: 12px;
+}
+.pr-button {
+  margin-top: 30px;
+}
+
+
+/*======= Responsive ======*/
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .dropdown-menu.arrow:before, .dropdown-menu.arrow:after {
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    display: inline-block;
+    content: '';
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+  }
+  .dropdown-menu > li > a {
+    color: #4c5667 !important;
+  }
+}
+@media (max-width: 767px) {
+  .dropdown-menu > li > a:hover {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .input-box {
+    min-width: 280px;
+  }
+  .btn-subscribe {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .feature-detail {
+    padding: 0px 0px 50px 30px !important;
+  }
 }
